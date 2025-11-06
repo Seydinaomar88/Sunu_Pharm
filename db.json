@@ -1,0 +1,189 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "nom": "Admin",
+      "email": "admin@pharma.com",
+      "password": "1234",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "nom": "Pharmacien 1",
+      "email": "pharma1@pharma.com",
+      "password": "1234",
+      "role": "pharmacien"
+    },
+    {
+      "id": "3",
+      "nom": "Patient 1",
+      "email": "patient1@pharma.com",
+      "password": "1234",
+      "role": "patient"
+    },
+    {
+      "id": "4",
+      "nom": "Ndoye",
+      "email": "livreur1@pharma.com",
+      "password": "1234",
+      "role": "livreur",
+      "prenom": "Cheikh",
+      "telephone": "771234567",
+      "immatriculation": "AA234AB"
+    },
+    {
+      "id": "17d4",
+      "nom": "Gueye",
+      "prenom": "Amed",
+      "telephone": "772345678",
+      "immatriculation": "AA236AB",
+      "role": "livreur",
+      "password": "1234"
+    },
+    {
+      "id": "7c42",
+      "nom": "Pharmacien 2",
+      "email": "pharma2@pharma.com",
+      "password": "passer123",
+      "role": "pharmacien"
+    },
+    {
+      "id": "22af",
+      "nom": "Pharmacien 3",
+      "email": "pharma3@pharma.com",
+      "password": "passer1234",
+      "role": "pharmacien",
+      "pharmacyId": "5b0c"
+    },
+    {
+      "id": "f82a",
+      "nom": "Loum",
+      "prenom": "Baba",
+      "telephone": "773234567",
+      "immatriculation": "AA245B",
+      "role": "livreur",
+      "password": "1234"
+    },
+    {
+      "id": "0ecf",
+      "nom": "Pharmacien 4",
+      "email": "pharma4@pharma.com",
+      "password": "passer123",
+      "role": "pharmacien"
+    }
+  ],
+  "pharmacies": [
+    {
+      "id": "1",
+      "nom": "Pharmacie Ngor",
+      "adresse": "Ngor",
+      "userId": 2
+    },
+    {
+      "id": "2",
+      "nom": "Pharmacie Almadies",
+      "adresse": "Almadies",
+      "userId": "7c42"
+    },
+    {
+      "id": "866d",
+      "nom": "Pharmacie Aeroport",
+      "adresse": "Yoff",
+      "userId": "0ecf"
+    },
+    {
+      "id": "5b0c",
+      "nom": "Pharmacie Khandar",
+      "adresse": "Yoff",
+      "userId": "22af"
+    }
+  ],
+  "medicaments": [
+    {
+      "id": "1",
+      "nom": "Paracétamol",
+      "quantite": 20,
+      "prix": 500,
+      "pharmacyId": 1
+    },
+    {
+      "id": "2",
+      "nom": "Ibuprofène",
+      "quantite": 30,
+      "prix": 700,
+      "pharmacyId": 1
+    },
+    {
+      "id": "3",
+      "nom": "Amoxicilline",
+      "quantite": 20,
+      "prix": 1200,
+      "pharmacyId": 2
+    },
+    {
+      "id": "ddbe",
+      "nom": "Vitamine c",
+      "quantite": 20,
+      "prix": 1500,
+      "pharmacyId": "1"
+    },
+    {
+      "id": "2c60",
+      "nom": "Paracetamol",
+      "quantite": 50,
+      "prix": 500,
+      "pharmacyId": "2"
+    },
+    {
+      "id": "75f4",
+      "nom": "Vitamine c",
+      "quantite": 30,
+      "prix": 1500,
+      "pharmacyId": "2"
+    },
+    {
+      "id": "9f54",
+      "nom": "Betadine",
+      "quantite": 20,
+      "prix": 1000,
+      "pharmacyId": "2"
+    },
+    {
+      "id": "0a33",
+      "nom": "Paracetamol",
+      "quantite": 20,
+      "prix": 500,
+      "pharmacyId": "5b0c"
+    },
+    {
+      "id": "3122",
+      "nom": "Paracetamol",
+      "quantite": 20,
+      "prix": 500,
+      "pharmacyId": "866d"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "patientId": 3,
+      "pharmacyId": 1,
+      "medicines": [
+        1,
+        2
+      ],
+      "status": "En attente",
+      "date": "2025-11-05T21:00:00"
+    },
+    {
+      "id": "cd41",
+      "patientId": "3",
+      "pharmacyId": 1,
+      "medicaments": [
+        null
+      ],
+      "status": "En attente",
+      "date": "2025-11-05T21:35:09.045Z"
+    }
+  ]
+}

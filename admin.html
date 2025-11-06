@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Gestion Pharmacie</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    .card-header h5 { margin: 0; }
+    .text-center { text-align: center; }
+    .btn { margin: 0 2px; }
+  </style>
+</head>
+<body>
+  <div class="container my-4">
+
+    <div class="d-flex justify-content-between mb-4">
+      <h2>Dashboard Admin</h2>
+      <button id="btnLogout" class="btn btn-danger">Déconnexion</button>
+    </div>
+
+    <!-- ------------------- Utilisateurs ------------------- -->
+    <div class="card mb-4">
+      <div class="card-header">
+        <h5>Gérer les Utilisateurs</h5>
+      </div>
+      <div class="card-body">
+        <div class="row g-3 mb-3">
+          <div class="col-md-3">
+            <input type="text" id="userNom" class="form-control" placeholder="Nom">
+          </div>
+          <div class="col-md-3">
+            <input type="email" id="userEmail" class="form-control" placeholder="Email">
+          </div>
+          <div class="col-md-2">
+            <input type="password" id="userPassword" class="form-control" placeholder="Mot de passe">
+          </div>
+          <div class="col-md-2">
+            <select id="userRole" class="form-select">
+              <option value="admin">Admin</option>
+              <option value="pharmacien">Pharmacien</option>
+              <option value="patient">Patient</option>
+            </select>
+          </div>
+
+          <!-- Sélection pharmacie visible seulement si pharmacien -->
+          <div class="col-md-2" id="pharmaSelectDiv" style="display:none;">
+            <select id="pharmacySelect" class="form-select">
+              <option value="">-- Sélectionner une pharmacie --</option>
+            </select>
+          </div>
+
+          <div class="col-md-2">
+            <button id="btnAddUser" class="btn btn-primary w-100">Ajouter / Modifier</button>
+            <input type="hidden" id="editUserId">
+          </div>
+        </div>
+        <table class="table table-striped" id="userTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nom</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Pharmacie Assignée</th>
+              <th class="text-center">Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ------------------- Pharmacies ------------------- -->
+    <div class="card mb-4">
+      <div class="card-header">
+        <h5>Gérer les Pharmacies</h5>
+      </div>
+      <div class="card-body">
+        <div class="row g-3 mb-3">
+          <div class="col-md-4">
+            <input type="text" id="pharmaNom" class="form-control" placeholder="Nom de la pharmacie">
+          </div>
+          <div class="col-md-4">
+            <input type="text" id="pharmaQuartier" class="form-control" placeholder="Adresse / Quartier">
+          </div>
+          <div class="col-md-4">
+            <button id="btnAddPharma" class="btn btn-primary w-100">Ajouter / Modifier</button>
+            <input type="hidden" id="editPharmaId">
+          </div>
+        </div>
+        <table class="table table-striped" id="pharmaTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nom</th>
+              <th>Adresse</th>
+              <th class="text-center">Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ------------------- Livreurs ------------------- -->
+    <div class="card mb-4">
+      <div class="card-header">
+        <h5>Gérer les Livreurs</h5>
+      </div>
+      <div class="card-body">
+        <div class="row g-3 mb-3">
+          <div class="col-md-2">
+            <input type="text" id="livNom" class="form-control" placeholder="Nom">
+          </div>
+          <div class="col-md-2">
+            <input type="text" id="livPrenom" class="form-control" placeholder="Prénom">
+          </div>
+          <div class="col-md-2">
+            <input type="text" id="livTelephone" class="form-control" placeholder="Téléphone">
+          </div>
+          <div class="col-md-2">
+            <input type="text" id="livImmatriculation" class="form-control" placeholder="Immatriculation">
+          </div>
+          <div class="col-md-2">
+            <button id="btnAddLivreur" class="btn btn-primary w-100">Ajouter / Modifier</button>
+            <input type="hidden" id="editLivreurId">
+          </div>
+        </div>
+        <table class="table table-striped" id="livTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nom</th>
+              <th>Prénom</th>
+              <th>Téléphone</th>
+              <th>Immatriculation</th>
+              <th class="text-center">Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ------------------- Médicaments ------------------- -->
+    <div class="card mb-4" id="medCard" style="display:none;">
+      <div class="card-header">
+        <h5>Gérer les Médicaments - <span id="pharmaTitle"></span></h5>
+      </div>
+      <div class="card-body">
+        <div class="row g-3 mb-3">
+          <div class="col-md-3">
+            <input type="text" id="medNom" class="form-control" placeholder="Nom du médicament">
+          </div>
+          <div class="col-md-2">
+            <input type="number" id="medQuantite" class="form-control" placeholder="Quantité">
+          </div>
+          <div class="col-md-2">
+            <input type="number" id="medPrix" class="form-control" placeholder="Prix (FCFA)">
+          </div>
+          <div class="col-md-2">
+            <button id="btnAddMed" class="btn btn-primary w-100">Ajouter / Modifier</button>
+            <input type="hidden" id="editMedId">
+          </div>
+        </div>
+        <table class="table table-striped" id="medTable">
+          <thead>
+            <tr>
+              <th>Nom</th>
+              <th>Quantité</th>
+              <th>Prix</th>
+              <th class="text-center">Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Afficher ou cacher la sélection de pharmacie
+    document.getElementById("userRole").addEventListener("change", function() {
+      const role = this.value;
+      const selectDiv = document.getElementById("pharmaSelectDiv");
+      if (role === "pharmacien") {
+        selectDiv.style.display = "block";
+      } else {
+        selectDiv.style.display = "none";
+      }
+    });
+  </script>
+
+  <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharmacien</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body class="p-4">
+
+  <div class="d-flex justify-content-between mb-4">
+    <h3 id="pharmaName">Pharmacie</h3>
+    <button id="btnLogout" class="btn btn-danger">Déconnexion</button>
+  </div>
+
+  <!-- Formulaire pour ajouter/modifier un médicament -->
+  <div class="card mb-4">
+    <div class="card-header"><h5>Gérer les Médicaments</h5></div>
+    <div class="card-body">
+      <div class="mb-3">
+        <label for="medNom" class="form-label">Nom du médicament</label>
+        <input type="text" id="medNom" class="form-control" placeholder="Ex: Paracétamol">
+      </div>
+      <div class="mb-3">
+        <label for="medQuantite" class="form-label">Quantité</label>
+        <input type="number" id="medQuantite" class="form-control" placeholder="Ex: 50">
+      </div>
+      <div class="mb-3">
+        <label for="medPrix" class="form-label">Prix (FCFA)</label>
+        <input type="number" id="medPrix" class="form-control" placeholder="Ex: 500">
+      </div>
+      <input type="hidden" id="editMedId">
+      <button id="btnAddMed" class="btn btn-primary">Ajouter / Modifier</button>
+    </div>
+  </div>
+
+  <!-- Tableau des médicaments -->
+  <div class="card">
+    <div class="card-header"><h5>Liste des Médicaments</h5></div>
+    <div class="card-body">
+      <table class="table table-striped" id="medTable">
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Quantité</th>
+            <th>Prix</th>
+            <th class="text-center">Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="pharmacien.js"></script>
+</body>
+</html>
