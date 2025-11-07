@@ -1,0 +1,15 @@
+.pharmacie {
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+}
+
+button.confirmer {
+  font-weight: bold;
+}
+
+footer a {
+  color: #0d6efd;
+}

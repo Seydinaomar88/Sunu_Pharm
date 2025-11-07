@@ -102,7 +102,7 @@
     {
       "id": "1",
       "nom": "Paracétamol",
-      "quantite": 20,
+      "quantite": 19,
       "prix": 500,
       "pharmacyId": 1
     },
@@ -116,51 +116,79 @@
     {
       "id": "3",
       "nom": "Amoxicilline",
-      "quantite": 20,
+      "quantite": 19,
       "prix": 1200,
       "pharmacyId": 2
     },
     {
       "id": "ddbe",
       "nom": "Vitamine c",
-      "quantite": 20,
+      "quantite": 15,
       "prix": 1500,
       "pharmacyId": "1"
     },
     {
       "id": "2c60",
       "nom": "Paracetamol",
-      "quantite": 50,
+      "quantite": 36,
       "prix": 500,
       "pharmacyId": "2"
     },
     {
       "id": "75f4",
       "nom": "Vitamine c",
-      "quantite": 30,
+      "quantite": 16,
       "prix": 1500,
       "pharmacyId": "2"
     },
     {
       "id": "9f54",
       "nom": "Betadine",
-      "quantite": 20,
+      "quantite": 19,
       "prix": 1000,
       "pharmacyId": "2"
     },
     {
       "id": "0a33",
       "nom": "Paracetamol",
-      "quantite": 20,
+      "quantite": 7,
       "prix": 500,
       "pharmacyId": "5b0c"
     },
     {
       "id": "3122",
       "nom": "Paracetamol",
-      "quantite": 20,
+      "quantite": 16,
       "prix": 500,
       "pharmacyId": "866d"
+    },
+    {
+      "id": "49c0",
+      "nom": "Betadine",
+      "quantite": 20,
+      "prix": 1000,
+      "pharmacyId": "1"
+    },
+    {
+      "id": "e276",
+      "nom": "Ibuprofene",
+      "quantite": 20,
+      "prix": 700,
+      "pharmacyId": "5b0c"
+    },
+    {
+      "id": "f13f",
+      "nom": "Vitamine c",
+      "quantite": 19,
+      "prix": 1500,
+      "pharmacyId": "5b0c"
+    },
+    {
+      "id": "08ba",
+      "nom": "Betadine",
+      "quantite": 20,
+      "prix": 1000,
+      "pharmacyId": "5b0c"
     }
   ],
   "orders": [
@@ -184,6 +212,367 @@
       ],
       "status": "En attente",
       "date": "2025-11-05T21:35:09.045Z"
+    },
+    {
+      "id": "7cf1",
+      "patientId": "3",
+      "pharmacyId": "5b0c",
+      "medicaments": [
+        {
+          "id": "0a33",
+          "nom": "Paracetamol",
+          "prix": 500
+        }
+      ],
+      "status": "Confirmée",
+      "date": "2025-11-06T17:41:52.909Z"
+    },
+    {
+      "id": "158f",
+      "patientId": "3",
+      "pharmacyId": "1",
+      "medicaments": [
+        {
+          "id": "ddbe",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "status": "Confirmée",
+      "date": "2025-11-06T18:18:41.339Z"
+    },
+    {
+      "id": "1762455957184",
+      "patientId": "3",
+      "pharmacyId": "1",
+      "pharmacyNom": "Pharmacie Ngor",
+      "medicaments": [
+        {
+          "id": "ddbe",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "status": "En attente",
+      "date": "2025-11-06T19:05:57.184Z"
+    },
+    {
+      "id": "d858",
+      "patientId": "3",
+      "pharmacyId": null,
+      "medicaments": [
+        {
+          "id": 1762458384957,
+          "nom": "Photo : Capture d'écran 2025-11-02 003016.png",
+          "prix": 0
+        }
+      ],
+      "status": "En attente",
+      "date": "2025-11-06T19:46:24.957Z"
+    },
+    {
+      "id": "6cfb",
+      "patientId": "3",
+      "pharmacyId": null,
+      "medicaments": [
+        {
+          "id": 1762458498327,
+          "nom": "Photo : Capture d'écran 2025-11-02 003016.png",
+          "prix": 0
+        }
+      ],
+      "status": "En attente",
+      "date": "2025-11-06T19:48:18.327Z"
+    },
+    {
+      "id": "839b",
+      "patientId": "3",
+      "pharmacyId": null,
+      "medicaments": [
+        {
+          "id": 1762458576210,
+          "nom": "Photo : Capture d'écran 2025-11-02 003016.png",
+          "prix": 0
+        }
+      ],
+      "status": "En attente",
+      "date": "2025-11-06T19:49:36.210Z"
+    },
+    {
+      "id": "1762464362560",
+      "patientId": "3",
+      "patientNom": "Ndiaye",
+      "patientPrenom": "Mor",
+      "patientTelephone": "771234567",
+      "patientAdresse": "Yoff",
+      "pharmacyId": "2",
+      "pharmacyNom": "Pharmacie Almadies",
+      "medicaments": [
+        {
+          "id": "2c60",
+          "nom": "Paracetamol",
+          "prix": 500
+        },
+        {
+          "id": "75f4",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "status": "Confirmée",
+      "date": "2025-11-06T21:26:02.560Z"
+    },
+    {
+      "id": "1762465422061",
+      "patientId": "3",
+      "pharmacyId": "1",
+      "pharmacyNom": "Pharmacie Ngor",
+      "medicaments": [
+        {
+          "id": "1",
+          "nom": "Paracétamol",
+          "prix": 500
+        },
+        {
+          "id": "ddbe",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "status": "En attente",
+      "date": "2025-11-06T21:43:42.061Z"
+    },
+    {
+      "id": "1762466163490",
+      "patientId": "3",
+      "pharmacyId": "2",
+      "pharmacyNom": "Pharmacie Almadies",
+      "medicaments": [
+        {
+          "id": "2c60",
+          "nom": "Paracetamol",
+          "prix": 500
+        },
+        {
+          "id": "75f4",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "status": "Refusée",
+      "date": "2025-11-06T21:56:03.490Z"
+    },
+    {
+      "id": "1762467152118",
+      "patientId": "3",
+      "pharmacyId": "1",
+      "pharmacyNom": "Pharmacie Ngor",
+      "medicaments": [
+        {
+          "id": "1",
+          "nom": "Paracétamol",
+          "prix": 500
+        },
+        {
+          "id": "ddbe",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "status": "En attente",
+      "date": "2025-11-06T22:12:32.118Z"
+    },
+    {
+      "id": "1762467513572",
+      "patientId": "3",
+      "pharmacyId": "2",
+      "pharmacyNom": "Pharmacie Almadies",
+      "medicaments": [
+        {
+          "id": "2c60",
+          "nom": "Paracetamol",
+          "prix": 500
+        },
+        {
+          "id": "75f4",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "status": "Confirmée",
+      "date": "2025-11-06T22:18:33.572Z"
+    },
+    {
+      "id": "1762527862541",
+      "patientId": "3",
+      "pharmacyId": "866d",
+      "pharmacyNom": "Pharmacie Aeroport",
+      "medicaments": [
+        {
+          "id": "3122",
+          "nom": "Paracetamol",
+          "prix": 500
+        }
+      ],
+      "status": "Confirmée",
+      "date": "2025-11-07T15:04:22.541Z"
+    },
+    {
+      "id": "1762527986252",
+      "patientId": "3",
+      "pharmacyId": "5b0c",
+      "pharmacyNom": "Pharmacie Khandar",
+      "medicaments": [
+        {
+          "id": "0a33",
+          "nom": "Paracetamol",
+          "prix": 500
+        }
+      ],
+      "status": "Confirmée",
+      "date": "2025-11-07T15:06:26.252Z"
+    },
+    {
+      "id": "1762528130474",
+      "patientId": "3",
+      "pharmacyId": "1",
+      "pharmacyNom": "Pharmacie Ngor",
+      "medicaments": [
+        {
+          "id": "1",
+          "nom": "Paracétamol",
+          "prix": 500
+        },
+        {
+          "id": "ddbe",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "status": "En attente",
+      "date": "2025-11-07T15:08:50.474Z"
+    },
+    {
+      "id": 1762528602220,
+      "patientId": "3",
+      "pharmacyId": "1",
+      "pharmacyNom": "Pharmacie Ngor",
+      "medicaments": [
+        {
+          "id": "1",
+          "nom": "Paracétamol",
+          "prix": 500
+        },
+        {
+          "id": "ddbe",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "status": "En attente",
+      "date": "2025-11-07T15:16:42.220Z"
+    },
+    {
+      "id": 1762528664221,
+      "patientId": "3",
+      "pharmacyId": "5b0c",
+      "pharmacyNom": "Pharmacie Khandar",
+      "medicaments": [
+        {
+          "id": "0a33",
+          "nom": "Paracetamol",
+          "prix": 500
+        }
+      ],
+      "status": "En attente",
+      "date": "2025-11-07T15:17:44.221Z"
+    },
+    {
+      "id": 1762532293606,
+      "patientId": "3",
+      "pharmacyId": "1",
+      "pharmacyNom": "Pharmacie Ngor",
+      "medicaments": [
+        {
+          "id": "1",
+          "nom": "Paracétamol",
+          "prix": 500
+        }
+      ],
+      "status": "En attente",
+      "date": "2025-11-07T16:18:13.606Z"
+    },
+    {
+      "id": 1762534021859,
+      "patientId": "3",
+      "patientNom": "Patient 1",
+      "patientPrenom": "",
+      "patientTelephone": "",
+      "patientAdresse": "",
+      "pharmacyId": "1",
+      "pharmacyNom": "Pharmacie Ngor",
+      "medicaments": [
+        {
+          "id": "1",
+          "nom": "Paracétamol",
+          "prix": 500
+        },
+        {
+          "id": "ddbe",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "status": "En attente",
+      "date": "2025-11-07T16:47:01.859Z"
+    },
+    {
+      "id": 1762535058663,
+      "patientId": "3",
+      "patientNom": "Patient 1",
+      "patientPrenom": "",
+      "patientTelephone": "",
+      "patientAdresse": "",
+      "pharmacyId": "1",
+      "pharmacyNom": "Pharmacie Ngor",
+      "medicaments": [
+        {
+          "id": "1",
+          "nom": "Paracétamol",
+          "prix": 500
+        },
+        {
+          "id": "ddbe",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "status": "En attente",
+      "date": "2025-11-07T17:04:18.663Z"
+    },
+    {
+      "id": 1762535125870,
+      "patientId": "3",
+      "patientNom": "Patient 1",
+      "patientPrenom": "",
+      "patientTelephone": "",
+      "patientAdresse": "",
+      "pharmacyId": "5b0c",
+      "pharmacyNom": "Pharmacie Khandar",
+      "medicaments": [
+        {
+          "id": "0a33",
+          "nom": "Paracetamol",
+          "prix": 500
+        },
+        {
+          "id": "f13f",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "status": "En attente",
+      "date": "2025-11-07T17:05:25.870Z"
     }
   ]
 }
