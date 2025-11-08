@@ -44,7 +44,7 @@ btnMesCommandes.onclick = () => {
   fetchCommandes();
 };
 
-// ------------------- Normalisation (tolérance majuscules et accents) -------------------
+// ------------------- Normalisation -------------------
 const normalizeString = str =>
   str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 
@@ -66,6 +66,7 @@ async function envoyerOrdonnance(type) {
   listePharmacies.innerHTML = "";
 
   let found = false;
+
   for (let ph of pharmacies) {
     const medsDisponibles = stock.filter(
       s =>
@@ -95,8 +96,8 @@ async function envoyerOrdonnance(type) {
       </div>
     `;
 
+    // Bouton confirmer
     div.querySelector(".confirmer").onclick = async () => {
-      // ✅ Inclure les informations du patient dans la commande
       const commande = {
         id: Date.now(),
         patientId: currentUser.id,
@@ -111,14 +112,14 @@ async function envoyerOrdonnance(type) {
         date: new Date().toISOString()
       };
 
-      // Enregistrer la commande dans JSON Server
+      // Enregistrer la commande
       await fetch(`${apiUrl}/orders`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(commande)
       });
 
-      // ✅ Notification complète envoyée au pharmacien
+      // Notification complète au pharmacien
       await fetch(`${apiUrl}/notifications`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -127,12 +128,12 @@ async function envoyerOrdonnance(type) {
           pharmacyId: ph.id,
           type: "nouvelle_commande",
           message: `
-            👤 Patient : ${currentUser.nom} ${currentUser.prenom || ""}
-            📞 Téléphone : ${currentUser.telephone || "-"}
-            📍 Adresse : ${currentUser.adresse || "-"}
-            💊 Médicaments : ${commande.medicaments.map(m => `${m.nom} (${m.prix} FCFA)`).join(", ")}
-            💰 Total : ${total} FCFA
-            📦 Statut : En attente
+👤 Patient : ${currentUser.nom} ${currentUser.prenom || ""}
+📞 Téléphone : ${currentUser.telephone || "-"}
+📍 Adresse : ${currentUser.adresse || "-"}
+💊 Médicaments : ${commande.medicaments.map(m => `${m.nom} (${m.prix} FCFA)`).join(", ")}
+💰 Total : ${total} FCFA
+📦 Statut : En attente
           `,
           date: new Date().toISOString(),
           lu: false
@@ -188,5 +189,5 @@ async function fetchCommandes() {
   });
 }
 
-// 🔁 Rafraîchissement auto toutes les 5 secondes pour suivre le statut en temps réel
+// Rafraîchissement auto toutes les 5 secondes
 setInterval(fetchCommandes, 5000);

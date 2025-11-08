@@ -19,17 +19,19 @@
       "nom": "Patient 1",
       "email": "patient1@pharma.com",
       "password": "1234",
-      "role": "patient"
+      "role": "patient",
+      "prenom": "Mor",
+      "telephone": "771234567",
+      "adresse": "Yoff"
     },
     {
       "id": "4",
       "nom": "Ndoye",
-      "email": "livreur1@pharma.com",
-      "password": "1234",
-      "role": "livreur",
       "prenom": "Cheikh",
       "telephone": "771234567",
-      "immatriculation": "AA234AB"
+      "immatriculation": "AA234AB",
+      "role": "livreur",
+      "password": "1234"
     },
     {
       "id": "17d4",
@@ -77,7 +79,7 @@
       "id": "1",
       "nom": "Pharmacie Ngor",
       "adresse": "Ngor",
-      "userId": 2
+      "userId": "2"
     },
     {
       "id": "2",
@@ -102,63 +104,63 @@
     {
       "id": "1",
       "nom": "Paracétamol",
-      "quantite": 19,
+      "quantite": 11,
       "prix": 500,
-      "pharmacyId": 1
+      "pharmacyId": "1"
     },
     {
       "id": "2",
       "nom": "Ibuprofène",
       "quantite": 30,
       "prix": 700,
-      "pharmacyId": 1
+      "pharmacyId": "1"
     },
     {
       "id": "3",
       "nom": "Amoxicilline",
-      "quantite": 19,
+      "quantite": 15,
       "prix": 1200,
-      "pharmacyId": 2
+      "pharmacyId": "2"
     },
     {
       "id": "ddbe",
       "nom": "Vitamine c",
-      "quantite": 15,
+      "quantite": 9,
       "prix": 1500,
       "pharmacyId": "1"
     },
     {
       "id": "2c60",
       "nom": "Paracetamol",
-      "quantite": 36,
+      "quantite": 27,
       "prix": 500,
       "pharmacyId": "2"
     },
     {
       "id": "75f4",
       "nom": "Vitamine c",
-      "quantite": 16,
+      "quantite": 8,
       "prix": 1500,
       "pharmacyId": "2"
     },
     {
       "id": "9f54",
       "nom": "Betadine",
-      "quantite": 19,
+      "quantite": 16,
       "prix": 1000,
       "pharmacyId": "2"
     },
     {
       "id": "0a33",
       "nom": "Paracetamol",
-      "quantite": 7,
+      "quantite": 2,
       "prix": 500,
       "pharmacyId": "5b0c"
     },
     {
       "id": "3122",
       "nom": "Paracetamol",
-      "quantite": 16,
+      "quantite": 13,
       "prix": 500,
       "pharmacyId": "866d"
     },
@@ -179,59 +181,144 @@
     {
       "id": "f13f",
       "nom": "Vitamine c",
-      "quantite": 19,
+      "quantite": 17,
       "prix": 1500,
       "pharmacyId": "5b0c"
     },
     {
       "id": "08ba",
       "nom": "Betadine",
-      "quantite": 20,
+      "quantite": 18,
       "prix": 1000,
       "pharmacyId": "5b0c"
     }
   ],
   "orders": [
     {
-      "id": "1",
-      "patientId": 3,
-      "pharmacyId": 1,
-      "medicines": [
-        1,
-        2
-      ],
-      "status": "En attente",
-      "date": "2025-11-05T21:00:00"
-    },
-    {
-      "id": "cd41",
+      "id": "1762551166542",
       "patientId": "3",
-      "pharmacyId": 1,
-      "medicaments": [
-        null
-      ],
-      "status": "En attente",
-      "date": "2025-11-05T21:35:09.045Z"
-    },
-    {
-      "id": "7cf1",
-      "patientId": "3",
-      "pharmacyId": "5b0c",
+      "patientNom": "Ndiaye",
+      "patientPrenom": "Mor",
+      "patientTelephone": "771234567",
+      "patientAdresse": "Yoff",
+      "pharmacyId": "1",
+      "pharmacyNom": "Pharmacie Ngor",
       "medicaments": [
         {
-          "id": "0a33",
+          "id": "1",
+          "nom": "Paracétamol",
+          "prix": 500
+        },
+        {
+          "id": "ddbe",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "status": "Confirmée",
+      "date": "2025-11-07T21:32:46.542Z"
+    },
+    {
+      "id": "1762555329146",
+      "patientId": "3",
+      "patientNom": "Sall",
+      "patientPrenom": "Ibou",
+      "patientTelephone": "770981234",
+      "patientAdresse": "Ngor",
+      "pharmacyId": "2",
+      "pharmacyNom": "Pharmacie Almadies",
+      "medicaments": [
+        {
+          "id": "2c60",
+          "nom": "Paracetamol",
+          "prix": 500
+        },
+        {
+          "id": "75f4",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "status": "Confirmée",
+      "date": "2025-11-07T22:42:09.146Z"
+    },
+    {
+      "id": "1762555893030",
+      "patientId": "3",
+      "patientNom": "Diouf",
+      "patientPrenom": "Cheikh",
+      "patientTelephone": "708765432",
+      "patientAdresse": "Grand Yoff",
+      "pharmacyId": "2",
+      "pharmacyNom": "Pharmacie Almadies",
+      "medicaments": [
+        {
+          "id": "2c60",
+          "nom": "Paracetamol",
+          "prix": 500
+        },
+        {
+          "id": "75f4",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "status": "Confirmée",
+      "date": "2025-11-07T22:51:33.030Z"
+    },
+    {
+      "id": "1762556260508",
+      "patientId": "3",
+      "patientNom": "Lo",
+      "patientPrenom": "Babacar",
+      "patientTelephone": "770987654",
+      "patientAdresse": "Virage",
+      "pharmacyId": "5b0c",
+      "pharmacyNom": "Pharmacie Khandar",
+      "medicaments": [
+        {
+          "id": "08ba",
+          "nom": "Betadine",
+          "prix": 1000
+        }
+      ],
+      "status": "Confirmée",
+      "date": "2025-11-07T22:57:40.508Z"
+    },
+    {
+      "id": "1762556506600",
+      "patientId": "3",
+      "patientNom": "Sylla",
+      "patientPrenom": "Doudou",
+      "patientTelephone": "761289081",
+      "patientAdresse": "Ouackam",
+      "pharmacyId": "866d",
+      "pharmacyNom": "Pharmacie Aeroport",
+      "medicaments": [
+        {
+          "id": "3122",
           "nom": "Paracetamol",
           "prix": 500
         }
       ],
       "status": "Confirmée",
-      "date": "2025-11-06T17:41:52.909Z"
+      "date": "2025-11-07T23:01:46.600Z"
     },
     {
-      "id": "158f",
+      "id": "1762556604797",
       "patientId": "3",
+      "patientNom": "Niass",
+      "patientPrenom": "Fallou",
+      "patientTelephone": "772345678",
+      "patientAdresse": "Medina",
       "pharmacyId": "1",
+      "pharmacyNom": "Pharmacie Ngor",
       "medicaments": [
+        {
+          "id": "1",
+          "nom": "Paracétamol",
+          "prix": 500
+        },
         {
           "id": "ddbe",
           "nom": "Vitamine c",
@@ -239,69 +326,194 @@
         }
       ],
       "status": "Confirmée",
-      "date": "2025-11-06T18:18:41.339Z"
+      "date": "2025-11-07T23:03:24.797Z"
     },
     {
-      "id": "1762455957184",
+      "id": "1762557092257",
       "patientId": "3",
+      "patientNom": "Diop",
+      "patientPrenom": "Ibou",
+      "patientTelephone": "773456789",
+      "patientAdresse": "Parcelle",
+      "pharmacyId": "866d",
+      "pharmacyNom": "Pharmacie Aeroport",
+      "medicaments": [
+        {
+          "id": "3122",
+          "nom": "Paracetamol",
+          "prix": 500
+        }
+      ],
+      "status": "Confirmée",
+      "date": "2025-11-07T23:11:32.257Z"
+    },
+    {
+      "id": "1762557137891",
+      "patientId": "3",
+      "patientNom": "Diallo",
+      "patientPrenom": "Abdou",
+      "patientTelephone": "704567890",
+      "patientAdresse": "Fann",
       "pharmacyId": "1",
       "pharmacyNom": "Pharmacie Ngor",
       "medicaments": [
+        {
+          "id": "1",
+          "nom": "Paracétamol",
+          "prix": 500
+        },
         {
           "id": "ddbe",
           "nom": "Vitamine c",
           "prix": 1500
         }
       ],
-      "status": "En attente",
-      "date": "2025-11-06T19:05:57.184Z"
+      "status": "Confirmée",
+      "date": "2025-11-07T23:12:17.891Z"
     },
     {
-      "id": "d858",
+      "id": "1762561665707",
       "patientId": "3",
-      "pharmacyId": null,
+      "patientNom": "Dieng",
+      "patientPrenom": "Lamine",
+      "patientTelephone": "774567891",
+      "patientAdresse": "Nord Foire",
+      "pharmacyId": "5b0c",
+      "pharmacyNom": "Pharmacie Khandar",
       "medicaments": [
         {
-          "id": 1762458384957,
-          "nom": "Photo : Capture d'écran 2025-11-02 003016.png",
-          "prix": 0
+          "id": "0a33",
+          "nom": "Paracetamol",
+          "prix": 500
+        },
+        {
+          "id": "f13f",
+          "nom": "Vitamine c",
+          "prix": 1500
         }
       ],
-      "status": "En attente",
-      "date": "2025-11-06T19:46:24.957Z"
+      "status": "Confirmée",
+      "date": "2025-11-08T00:27:45.707Z"
     },
     {
-      "id": "6cfb",
+      "id": "1762564146614",
       "patientId": "3",
-      "pharmacyId": null,
+      "patientNom": "Patient 1",
+      "patientPrenom": "Mor",
+      "patientTelephone": "771234567",
+      "patientAdresse": "Yoff",
+      "pharmacyId": "1",
+      "pharmacyNom": "Pharmacie Ngor",
       "medicaments": [
         {
-          "id": 1762458498327,
-          "nom": "Photo : Capture d'écran 2025-11-02 003016.png",
-          "prix": 0
+          "id": "1",
+          "nom": "Paracétamol",
+          "prix": 500
+        },
+        {
+          "id": "ddbe",
+          "nom": "Vitamine c",
+          "prix": 1500
         }
       ],
-      "status": "En attente",
-      "date": "2025-11-06T19:48:18.327Z"
+      "status": "Confirmée",
+      "date": "2025-11-08T01:09:06.614Z"
     },
     {
-      "id": "839b",
+      "id": "1762566145947",
       "patientId": "3",
-      "pharmacyId": null,
+      "patientNom": "Patient 1",
+      "patientPrenom": "Mor",
+      "patientTelephone": "771234567",
+      "patientAdresse": "Yoff",
+      "pharmacyId": "1",
+      "pharmacyNom": "Pharmacie Ngor",
       "medicaments": [
         {
-          "id": 1762458576210,
-          "nom": "Photo : Capture d'écran 2025-11-02 003016.png",
-          "prix": 0
+          "id": "1",
+          "nom": "Paracétamol",
+          "prix": 500
+        },
+        {
+          "id": "ddbe",
+          "nom": "Vitamine c",
+          "prix": 1500
         }
       ],
-      "status": "En attente",
-      "date": "2025-11-06T19:49:36.210Z"
+      "status": "Confirmée",
+      "date": "2025-11-08T01:42:25.947Z"
     },
     {
-      "id": "1762464362560",
+      "id": "1762566881870",
       "patientId": "3",
-      "patientNom": "Ndiaye",
+      "patientNom": "Patient 1",
+      "patientPrenom": "Mor",
+      "patientTelephone": "771234567",
+      "patientAdresse": "Yoff",
+      "pharmacyId": "5b0c",
+      "pharmacyNom": "Pharmacie Khandar",
+      "medicaments": [
+        {
+          "id": "0a33",
+          "nom": "Paracetamol",
+          "prix": 500
+        },
+        {
+          "id": "f13f",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "status": "Confirmée",
+      "date": "2025-11-08T01:54:41.870Z"
+    },
+    {
+      "id": "1762567730568",
+      "patientId": "3",
+      "patientNom": "Patient 1",
+      "patientPrenom": "Mor",
+      "patientTelephone": "771234567",
+      "patientAdresse": "Yoff",
+      "pharmacyId": "2",
+      "pharmacyNom": "Pharmacie Almadies",
+      "medicaments": [
+        {
+          "id": "9f54",
+          "nom": "Betadine",
+          "prix": 1000
+        }
+      ],
+      "status": "Confirmée",
+      "date": "2025-11-08T02:08:50.568Z"
+    },
+    {
+      "id": "1762568534588",
+      "patientId": "3",
+      "patientNom": "Patient 1",
+      "patientPrenom": "Mor",
+      "patientTelephone": "771234567",
+      "patientAdresse": "Yoff",
+      "pharmacyId": "1",
+      "pharmacyNom": "Pharmacie Ngor",
+      "medicaments": [
+        {
+          "id": "1",
+          "nom": "Paracétamol",
+          "prix": 500
+        },
+        {
+          "id": "ddbe",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "status": "Confirmée",
+      "date": "2025-11-08T02:22:14.588Z"
+    },
+    {
+      "id": "1762569336667",
+      "patientId": "3",
+      "patientNom": "Patient 1",
       "patientPrenom": "Mor",
       "patientTelephone": "771234567",
       "patientAdresse": "Yoff",
@@ -320,11 +532,15 @@
         }
       ],
       "status": "Confirmée",
-      "date": "2025-11-06T21:26:02.560Z"
+      "date": "2025-11-08T02:35:36.667Z"
     },
     {
-      "id": "1762465422061",
+      "id": "1762571649583",
       "patientId": "3",
+      "patientNom": "Patient 1",
+      "patientPrenom": "Mor",
+      "patientTelephone": "771234567",
+      "patientAdresse": "Yoff",
       "pharmacyId": "1",
       "pharmacyNom": "Pharmacie Ngor",
       "medicaments": [
@@ -339,52 +555,16 @@
           "prix": 1500
         }
       ],
-      "status": "En attente",
-      "date": "2025-11-06T21:43:42.061Z"
+      "status": "Confirmée",
+      "date": "2025-11-08T03:14:09.583Z"
     },
     {
-      "id": "1762466163490",
+      "id": "1762574739853",
       "patientId": "3",
-      "pharmacyId": "2",
-      "pharmacyNom": "Pharmacie Almadies",
-      "medicaments": [
-        {
-          "id": "2c60",
-          "nom": "Paracetamol",
-          "prix": 500
-        },
-        {
-          "id": "75f4",
-          "nom": "Vitamine c",
-          "prix": 1500
-        }
-      ],
-      "status": "Refusée",
-      "date": "2025-11-06T21:56:03.490Z"
-    },
-    {
-      "id": "1762467152118",
-      "patientId": "3",
-      "pharmacyId": "1",
-      "pharmacyNom": "Pharmacie Ngor",
-      "medicaments": [
-        {
-          "id": "1",
-          "nom": "Paracétamol",
-          "prix": 500
-        },
-        {
-          "id": "ddbe",
-          "nom": "Vitamine c",
-          "prix": 1500
-        }
-      ],
-      "status": "En attente",
-      "date": "2025-11-06T22:12:32.118Z"
-    },
-    {
-      "id": "1762467513572",
-      "patientId": "3",
+      "patientNom": "Patient 1",
+      "patientPrenom": "Mor",
+      "patientTelephone": "771234567",
+      "patientAdresse": "Yoff",
       "pharmacyId": "2",
       "pharmacyNom": "Pharmacie Almadies",
       "medicaments": [
@@ -400,117 +580,387 @@
         }
       ],
       "status": "Confirmée",
-      "date": "2025-11-06T22:18:33.572Z"
+      "date": "2025-11-08T04:05:39.853Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "1762551166566",
+      "pharmacyId": "1",
+      "type": "nouvelle_commande",
+      "message": "\n👤 Patient : Patient 1 Mor\n📞 Téléphone : 771234567\n📍 Adresse : Yoff\n💊 Médicaments : Paracétamol (500 FCFA), Vitamine c (1500 FCFA)\n💰 Total : 2000 FCFA\n📦 Statut : En attente\n          ",
+      "date": "2025-11-07T21:32:46.566Z",
+      "lu": false
     },
     {
-      "id": "1762527862541",
+      "id": "1762551196083",
       "patientId": "3",
+      "pharmacyId": "1",
+      "message": "✅ Votre commande #1762551166542 a été confirmée par Pharmacie Ngor.",
+      "lu": false,
+      "date": "2025-11-07T21:33:16.083Z"
+    },
+    {
+      "id": "1762551210204",
+      "patientId": "3",
+      "pharmacyId": "1",
+      "message": "✅ Votre commande #1762551166542 a été confirmée par Pharmacie Ngor.",
+      "lu": false,
+      "date": "2025-11-07T21:33:30.204Z"
+    },
+    {
+      "id": "1762551222811",
+      "patientId": "3",
+      "pharmacyId": "1",
+      "message": "✅ Votre commande #1762551166542 a été confirmée par Pharmacie Ngor.",
+      "lu": false,
+      "date": "2025-11-07T21:33:42.811Z"
+    },
+    {
+      "id": "1762551246348",
+      "patientId": "3",
+      "pharmacyId": "1",
+      "message": "❌ Votre commande #1762551166542 a été refusée par Pharmacie Ngor.",
+      "lu": false,
+      "date": "2025-11-07T21:34:06.348Z"
+    },
+    {
+      "id": "1762551408257",
+      "patientId": "3",
+      "pharmacyId": "1",
+      "message": "✅ Votre commande #1762551166542 a été confirmée par Pharmacie Ngor.",
+      "lu": false,
+      "date": "2025-11-07T21:36:48.257Z"
+    },
+    {
+      "id": "1762551930645",
+      "patientId": "3",
+      "pharmacyId": "1",
+      "message": "✅ Votre commande #1762551166542 a été confirmée par Pharmacie Ngor.",
+      "lu": false,
+      "date": "2025-11-07T21:45:30.645Z"
+    },
+    {
+      "id": "1762551940142",
+      "patientId": "3",
+      "pharmacyId": "1",
+      "message": "✅ Votre commande #1762551166542 a été confirmée par Pharmacie Ngor.",
+      "lu": false,
+      "date": "2025-11-07T21:45:40.142Z"
+    },
+    {
+      "id": "1762551971968",
+      "patientId": "3",
+      "pharmacyId": "1",
+      "message": "❌ Votre commande #1762551166542 a été refusée par Pharmacie Ngor.",
+      "lu": false,
+      "date": "2025-11-07T21:46:11.968Z"
+    },
+    {
+      "id": "1762552225780",
+      "patientId": "3",
+      "pharmacyId": "1",
+      "message": "✅ Votre commande #1762551166542 a été confirmée par Pharmacie Ngor.",
+      "lu": false,
+      "date": "2025-11-07T21:50:25.780Z"
+    },
+    {
+      "id": "1762552251993",
+      "patientId": "3",
+      "pharmacyId": "1",
+      "message": "✅ Votre commande #1762551166542 a été confirmée par Pharmacie Ngor.",
+      "lu": false,
+      "date": "2025-11-07T21:50:51.993Z"
+    },
+    {
+      "id": "1762552574589",
+      "patientId": "3",
+      "pharmacyId": "1",
+      "message": "✅ Votre commande #1762551166542 a été confirmée par Pharmacie Ngor.",
+      "lu": false,
+      "date": "2025-11-07T21:56:14.589Z"
+    },
+    {
+      "id": "1762552582741",
+      "patientId": "3",
+      "pharmacyId": "1",
+      "message": "✅ Votre commande #1762551166542 a été confirmée par Pharmacie Ngor.",
+      "lu": false,
+      "date": "2025-11-07T21:56:22.741Z"
+    },
+    {
+      "id": "1762552731690",
+      "patientId": "3",
+      "pharmacyId": "1",
+      "message": "✅ Votre commande #1762551166542 a été confirmée par Pharmacie Ngor.",
+      "lu": false,
+      "date": "2025-11-07T21:58:51.690Z"
+    },
+    {
+      "id": "1762552773329",
+      "patientId": "3",
+      "pharmacyId": "1",
+      "message": "✅ Votre commande #1762551166542 a été confirmée par Pharmacie Ngor.",
+      "lu": false,
+      "date": "2025-11-07T21:59:33.329Z"
+    },
+    {
+      "id": "1762552924851",
+      "patientId": "3",
+      "pharmacyId": "1",
+      "message": "✅ Votre commande #1762551166542 a été confirmée par Pharmacie Ngor.",
+      "lu": false,
+      "date": "2025-11-07T22:02:04.851Z"
+    },
+    {
+      "id": "1762552938494",
+      "patientId": "3",
+      "pharmacyId": "1",
+      "message": "❌ Votre commande #1762551166542 a été refusée par Pharmacie Ngor.",
+      "lu": false,
+      "date": "2025-11-07T22:02:18.494Z"
+    },
+    {
+      "id": "1762553384552",
+      "patientId": "3",
+      "pharmacyId": "1",
+      "message": "✅ Votre commande #1762551166542 a été confirmée par Pharmacie Ngor.",
+      "lu": false,
+      "date": "2025-11-07T22:09:44.552Z"
+    },
+    {
+      "id": "1762553396232",
+      "patientId": "3",
+      "pharmacyId": "1",
+      "message": "✅ Votre commande #1762551166542 a été confirmée par Pharmacie Ngor.",
+      "lu": false,
+      "date": "2025-11-07T22:09:56.232Z"
+    },
+    {
+      "id": "1762553721572",
+      "patientId": "3",
+      "pharmacyId": "1",
+      "message": "✅ Votre commande #1762551166542 a été confirmée par Pharmacie Ngor.",
+      "lu": false,
+      "date": "2025-11-07T22:15:21.572Z"
+    },
+    {
+      "id": "1762555329162",
+      "pharmacyId": "2",
+      "type": "nouvelle_commande",
+      "message": "\n👤 Patient : Patient 1 Mor\n📞 Téléphone : 771234567\n📍 Adresse : Yoff\n💊 Médicaments : Paracetamol (500 FCFA), Vitamine c (1500 FCFA)\n💰 Total : 2000 FCFA\n📦 Statut : En attente\n          ",
+      "date": "2025-11-07T22:42:09.162Z",
+      "lu": false
+    },
+    {
+      "id": "1762555893043",
+      "pharmacyId": "2",
+      "type": "nouvelle_commande",
+      "message": "\n👤 Patient : Patient 1 Mor\n📞 Téléphone : 771234567\n📍 Adresse : Yoff\n💊 Médicaments : Paracetamol (500 FCFA), Vitamine c (1500 FCFA)\n💰 Total : 2000 FCFA\n📦 Statut : En attente\n          ",
+      "date": "2025-11-07T22:51:33.043Z",
+      "lu": false
+    },
+    {
+      "id": "1762556260528",
+      "pharmacyId": "5b0c",
+      "type": "nouvelle_commande",
+      "message": "\n👤 Patient : Patient 1 Mor\n📞 Téléphone : 771234567\n📍 Adresse : Yoff\n💊 Médicaments : Betadine (1000 FCFA)\n💰 Total : 1000 FCFA\n📦 Statut : En attente\n          ",
+      "date": "2025-11-07T22:57:40.528Z",
+      "lu": false
+    },
+    {
+      "id": "1762556506614",
       "pharmacyId": "866d",
-      "pharmacyNom": "Pharmacie Aeroport",
-      "medicaments": [
-        {
-          "id": "3122",
-          "nom": "Paracetamol",
-          "prix": 500
-        }
-      ],
-      "status": "Confirmée",
-      "date": "2025-11-07T15:04:22.541Z"
+      "type": "nouvelle_commande",
+      "message": "\n👤 Patient : Patient 1 Mor\n📞 Téléphone : 771234567\n📍 Adresse : Yoff\n💊 Médicaments : Paracetamol (500 FCFA)\n💰 Total : 500 FCFA\n📦 Statut : En attente\n          ",
+      "date": "2025-11-07T23:01:46.614Z",
+      "lu": false
     },
     {
-      "id": "1762527986252",
-      "patientId": "3",
+      "id": "1762556604816",
+      "pharmacyId": "1",
+      "type": "nouvelle_commande",
+      "message": "\n👤 Patient : Patient 1 Mor\n📞 Téléphone : 771234567\n📍 Adresse : Yoff\n💊 Médicaments : Paracétamol (500 FCFA), Vitamine c (1500 FCFA)\n💰 Total : 2000 FCFA\n📦 Statut : En attente\n          ",
+      "date": "2025-11-07T23:03:24.816Z",
+      "lu": false
+    },
+    {
+      "id": "1762557092269",
+      "pharmacyId": "866d",
+      "type": "nouvelle_commande",
+      "message": "\n👤 Patient : Patient 1 Mor\n📞 Téléphone : 771234567\n📍 Adresse : Yoff\n💊 Médicaments : Paracetamol (500 FCFA)\n💰 Total : 500 FCFA\n📦 Statut : En attente\n          ",
+      "date": "2025-11-07T23:11:32.269Z",
+      "lu": false
+    },
+    {
+      "id": "1762557137903",
+      "pharmacyId": "1",
+      "type": "nouvelle_commande",
+      "message": "\n👤 Patient : Patient 1 Mor\n📞 Téléphone : 771234567\n📍 Adresse : Yoff\n💊 Médicaments : Paracétamol (500 FCFA), Vitamine c (1500 FCFA)\n💰 Total : 2000 FCFA\n📦 Statut : En attente\n          ",
+      "date": "2025-11-07T23:12:17.903Z",
+      "lu": false
+    },
+    {
+      "id": "1762561665735",
       "pharmacyId": "5b0c",
-      "pharmacyNom": "Pharmacie Khandar",
-      "medicaments": [
-        {
-          "id": "0a33",
-          "nom": "Paracetamol",
-          "prix": 500
-        }
-      ],
-      "status": "Confirmée",
-      "date": "2025-11-07T15:06:26.252Z"
+      "type": "nouvelle_commande",
+      "message": "\n👤 Patient : Patient 1 Mor\n📞 Téléphone : 771234567\n📍 Adresse : Yoff\n💊 Médicaments : Paracetamol (500 FCFA), Vitamine c (1500 FCFA)\n💰 Total : 2000 FCFA\n📦 Statut : En attente\n          ",
+      "date": "2025-11-08T00:27:45.735Z",
+      "lu": false
     },
     {
-      "id": "1762528130474",
-      "patientId": "3",
+      "id": "1762566145980",
       "pharmacyId": "1",
-      "pharmacyNom": "Pharmacie Ngor",
-      "medicaments": [
-        {
-          "id": "1",
-          "nom": "Paracétamol",
-          "prix": 500
-        },
-        {
-          "id": "ddbe",
-          "nom": "Vitamine c",
-          "prix": 1500
-        }
-      ],
-      "status": "En attente",
-      "date": "2025-11-07T15:08:50.474Z"
+      "type": "nouvelle_commande",
+      "message": "\n👤 Patient : Patient 1 Mor\n📞 Téléphone : 771234567\n📍 Adresse : Yoff\n💊 Médicaments : Paracétamol (500 FCFA), Vitamine c (1500 FCFA)\n💰 Total : 2000 FCFA\n📦 Statut : En attente\n          ",
+      "date": "2025-11-08T01:42:25.980Z",
+      "lu": false
     },
     {
-      "id": 1762528602220,
-      "patientId": "3",
-      "pharmacyId": "1",
-      "pharmacyNom": "Pharmacie Ngor",
-      "medicaments": [
-        {
-          "id": "1",
-          "nom": "Paracétamol",
-          "prix": 500
-        },
-        {
-          "id": "ddbe",
-          "nom": "Vitamine c",
-          "prix": 1500
-        }
-      ],
-      "status": "En attente",
-      "date": "2025-11-07T15:16:42.220Z"
-    },
-    {
-      "id": 1762528664221,
-      "patientId": "3",
+      "id": "1762566881893",
       "pharmacyId": "5b0c",
-      "pharmacyNom": "Pharmacie Khandar",
+      "type": "nouvelle_commande",
+      "message": "\n👤 Patient : Patient 1 Mor\n📞 Téléphone : 771234567\n📍 Adresse : Yoff\n💊 Médicaments : Paracetamol (500 FCFA), Vitamine c (1500 FCFA)\n💰 Total : 2000 FCFA\n📦 Statut : En attente\n          ",
+      "date": "2025-11-08T01:54:41.893Z",
+      "lu": false
+    },
+    {
+      "id": "1762567730595",
+      "pharmacyId": "2",
+      "type": "nouvelle_commande",
+      "message": "\n👤 Patient : Patient 1 Mor\n📞 Téléphone : 771234567\n📍 Adresse : Yoff\n💊 Médicaments : Betadine (1000 FCFA)\n💰 Total : 1000 FCFA\n📦 Statut : En attente\n          ",
+      "date": "2025-11-08T02:08:50.595Z",
+      "lu": false
+    },
+    {
+      "id": "1762568534612",
+      "pharmacyId": "1",
+      "type": "nouvelle_commande",
+      "message": "\n👤 Patient : Patient 1 Mor\n📞 Téléphone : 771234567\n📍 Adresse : Yoff\n💊 Médicaments : Paracétamol (500 FCFA), Vitamine c (1500 FCFA)\n💰 Total : 2000 FCFA\n📦 Statut : En attente\n          ",
+      "date": "2025-11-08T02:22:14.612Z",
+      "lu": false
+    },
+    {
+      "id": "1762569336684",
+      "pharmacyId": "2",
+      "type": "nouvelle_commande",
+      "message": "\n👤 Patient : Patient 1 Mor\n📞 Téléphone : 771234567\n📍 Adresse : Yoff\n💊 Médicaments : Paracetamol (500 FCFA), Vitamine c (1500 FCFA)\n💰 Total : 2000 FCFA\n📦 Statut : En attente\n          ",
+      "date": "2025-11-08T02:35:36.684Z",
+      "lu": false
+    },
+    {
+      "id": "1762571649599",
+      "pharmacyId": "1",
+      "type": "nouvelle_commande",
+      "message": "\n👤 Patient : Patient 1 Mor\n📞 Téléphone : 771234567\n📍 Adresse : Yoff\n💊 Médicaments : Paracétamol (500 FCFA), Vitamine c (1500 FCFA)\n💰 Total : 2000 FCFA\n📦 Statut : En attente\n          ",
+      "date": "2025-11-08T03:14:09.599Z",
+      "lu": false
+    },
+    {
+      "id": "1762574739867",
+      "pharmacyId": "2",
+      "type": "nouvelle_commande",
+      "message": "\n👤 Patient : Patient 1 Mor\n📞 Téléphone : 771234567\n📍 Adresse : Yoff\n💊 Médicaments : Paracetamol (500 FCFA), Vitamine c (1500 FCFA)\n💰 Total : 2000 FCFA\n📦 Statut : En attente\n          ",
+      "date": "2025-11-08T04:05:39.867Z",
+      "lu": false
+    }
+  ],
+  "ventes": [
+    {
+      "id": "1762567836656",
+      "commandeId": "1762567730568",
+      "pharmacyId": "2",
+      "patientNom": "Faye",
+      "patientPrenom": "Pape",
+      "patientAdresse": "Liberte 6",
+      "patientTelephone": "765674567",
       "medicaments": [
         {
-          "id": "0a33",
+          "id": "9f54",
+          "nom": "Betadine",
+          "prix": 1000
+        }
+      ],
+      "total": 1000,
+      "date": "2025-11-08T02:10:36.656Z"
+    },
+    {
+      "id": "1762567881358",
+      "commandeId": "1762555893030",
+      "pharmacyId": "2",
+      "patientNom": "Thiaw",
+      "patientPrenom": "Daba",
+      "patientAdresse": "Biagui",
+      "patientTelephone": "763894530",
+      "medicaments": [
+        {
+          "id": "2c60",
           "nom": "Paracetamol",
           "prix": 500
+        },
+        {
+          "id": "75f4",
+          "nom": "Vitamine c",
+          "prix": 1500
         }
       ],
-      "status": "En attente",
-      "date": "2025-11-07T15:17:44.221Z"
+      "total": 2000,
+      "date": "2025-11-08T02:11:21.358Z"
     },
     {
-      "id": 1762532293606,
-      "patientId": "3",
-      "pharmacyId": "1",
-      "pharmacyNom": "Pharmacie Ngor",
+      "id": "1762567896804",
+      "commandeId": "1762555329146",
+      "pharmacyId": "2",
+      "patientNom": "Lo",
+      "patientPrenom": "Soda",
+      "patientAdresse": "Mbao",
+      "patientTelephone": "763894524",
       "medicaments": [
         {
-          "id": "1",
-          "nom": "Paracétamol",
+          "id": "2c60",
+          "nom": "Paracetamol",
           "prix": 500
+        },
+        {
+          "id": "75f4",
+          "nom": "Vitamine c",
+          "prix": 1500
         }
       ],
-      "status": "En attente",
-      "date": "2025-11-07T16:18:13.606Z"
+      "total": 2000,
+      "date": "2025-11-08T02:11:36.804Z"
     },
     {
-      "id": 1762534021859,
-      "patientId": "3",
-      "patientNom": "Patient 1",
-      "patientPrenom": "",
-      "patientTelephone": "",
-      "patientAdresse": "",
+      "id": "1762567908919",
+      "commandeId": "1762555329146",
+      "pharmacyId": "2",
+      "patientNom": "Faye",
+      "patientPrenom": "Debo",
+      "patientAdresse": "Grand Dakar",
+      "patientTelephone": "763894567",
+      "medicaments": [
+        {
+          "id": "2c60",
+          "nom": "Paracetamol",
+          "prix": 500
+        },
+        {
+          "id": "75f4",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "total": 2000,
+      "date": "2025-11-08T02:11:48.919Z"
+    },
+    {
+      "id": "1762568349424",
+      "commandeId": "1762566145947",
       "pharmacyId": "1",
-      "pharmacyNom": "Pharmacie Ngor",
+      "patientNom": "Gueye",
+      "patientPrenom": "Abdou Karim",
+      "patientAdresse": "Grand Dakar",
+      "patientTelephone": "775647893",
       "medicaments": [
         {
           "id": "1",
@@ -523,18 +973,17 @@
           "prix": 1500
         }
       ],
-      "status": "En attente",
-      "date": "2025-11-07T16:47:01.859Z"
+      "total": 2000,
+      "date": "2025-11-08T02:19:09.424Z"
     },
     {
-      "id": 1762535058663,
-      "patientId": "3",
-      "patientNom": "Patient 1",
-      "patientPrenom": "",
-      "patientTelephone": "",
-      "patientAdresse": "",
+      "id": "1762568373776",
+      "commandeId": "1762564146614",
       "pharmacyId": "1",
-      "pharmacyNom": "Pharmacie Ngor",
+      "patientNom": "Toure",
+      "patientPrenom": "Katim",
+      "patientAdresse": "Yoff",
+      "patientTelephone": "771234567",
       "medicaments": [
         {
           "id": "1",
@@ -547,32 +996,411 @@
           "prix": 1500
         }
       ],
-      "status": "En attente",
-      "date": "2025-11-07T17:04:18.663Z"
+      "total": 2000,
+      "date": "2025-11-08T02:19:33.776Z"
     },
     {
-      "id": 1762535125870,
-      "patientId": "3",
-      "patientNom": "Patient 1",
-      "patientPrenom": "",
-      "patientTelephone": "",
-      "patientAdresse": "",
-      "pharmacyId": "5b0c",
-      "pharmacyNom": "Pharmacie Khandar",
+      "id": "1762568392820",
+      "commandeId": "1762557137891",
+      "pharmacyId": "1",
+      "patientNom": "Diallo",
+      "patientPrenom": "Abdou",
+      "patientAdresse": "Fann",
+      "patientTelephone": "704567890",
       "medicaments": [
         {
-          "id": "0a33",
-          "nom": "Paracetamol",
+          "id": "1",
+          "nom": "Paracétamol",
           "prix": 500
         },
         {
-          "id": "f13f",
+          "id": "ddbe",
           "nom": "Vitamine c",
           "prix": 1500
         }
       ],
-      "status": "En attente",
-      "date": "2025-11-07T17:05:25.870Z"
+      "total": 2000,
+      "date": "2025-11-08T02:19:52.820Z"
+    },
+    {
+      "id": "1762568401236",
+      "commandeId": "1762556604797",
+      "pharmacyId": "1",
+      "patientNom": "Niass",
+      "patientPrenom": "Fallou",
+      "patientAdresse": "Medina",
+      "patientTelephone": "772345678",
+      "medicaments": [
+        {
+          "id": "1",
+          "nom": "Paracétamol",
+          "prix": 500
+        },
+        {
+          "id": "ddbe",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "total": 2000,
+      "date": "2025-11-08T02:20:01.236Z"
+    },
+    {
+      "id": "1762568615005",
+      "commandeId": "1762568534588",
+      "pharmacyId": "1",
+      "patientNom": "Ndoye",
+      "patientPrenom": "Birane",
+      "patientAdresse": "Thiaroye",
+      "patientTelephone": "772930478",
+      "medicaments": [
+        {
+          "id": "1",
+          "nom": "Paracétamol",
+          "prix": 500
+        },
+        {
+          "id": "ddbe",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "total": 2000,
+      "date": "2025-11-08T02:23:35.005Z"
+    },
+    {
+      "id": "1762568832324",
+      "commandeId": "1762551166542",
+      "pharmacyId": "1",
+      "patientNom": "Seck",
+      "patientPrenom": "Babacar",
+      "patientAdresse": "Touba",
+      "patientTelephone": "771234567",
+      "medicaments": [
+        {
+          "id": "1",
+          "nom": "Paracétamol",
+          "prix": 500
+        },
+        {
+          "id": "ddbe",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "total": 2000,
+      "date": "2025-11-08T02:27:12.324Z"
+    },
+    {
+      "id": "1762569411771",
+      "commandeId": "1762569336667",
+      "pharmacyId": "2",
+      "patientNom": "Ndiaye",
+      "patientPrenom": "Mor",
+      "patientAdresse": "Yoff",
+      "patientTelephone": "771234567",
+      "medicaments": [
+        {
+          "id": "2c60",
+          "nom": "Paracetamol",
+          "prix": 500
+        },
+        {
+          "id": "75f4",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "total": 2000,
+      "date": "2025-11-08T02:36:51.771Z"
+    },
+    {
+      "id": "1762570993902",
+      "pharmacyId": "1",
+      "patientNom": "Sane",
+      "patientPrenom": "Mane",
+      "patientAdresse": "Guediawaye",
+      "patientTelephone": "702789658",
+      "medicaments": [
+        {
+          "nom": "Paracetamol",
+          "quantite": 1,
+          "prix": 500
+        }
+      ],
+      "total": 500,
+      "date": "2025-11-08T03:03:13.902Z"
+    },
+    {
+      "id": "1762571394711",
+      "pharmacyId": "1",
+      "patientNom": "Sane",
+      "patientPrenom": "Salif",
+      "patientAdresse": "Cite Damel",
+      "patientTelephone": "772459876",
+      "medicaments": [
+        {
+          "nom": "Ibuprofene",
+          "quantite": 2,
+          "prix": 700
+        }
+      ],
+      "total": 1400,
+      "date": "2025-11-08T03:09:54.711Z"
+    },
+    {
+      "id": "1762572120353",
+      "pharmacyId": "1",
+      "patientNom": "Diene",
+      "patientPrenom": "Mansour",
+      "patientAdresse": "Kaolack",
+      "patientTelephone": "776589340",
+      "medicaments": [
+        {
+          "nom": "Paracetamol",
+          "quantite": 3,
+          "prix": 500
+        }
+      ],
+      "total": 1500,
+      "date": "2025-11-08T03:22:00.353Z"
+    },
+    {
+      "id": "1762572430561",
+      "pharmacyId": "1",
+      "patientNom": "Sow",
+      "patientPrenom": "Seydou",
+      "patientAdresse": "Ndioum",
+      "patientTelephone": "779358720",
+      "medicaments": [
+        {
+          "nom": "Paracetamol",
+          "quantite": 3,
+          "prix": 500
+        }
+      ],
+      "total": 1500,
+      "date": "2025-11-08T03:27:10.561Z"
+    },
+    {
+      "id": "1762572826695",
+      "pharmacyId": "1",
+      "patientNom": "senghor",
+      "patientPrenom": "Ngor",
+      "patientTelephone": "701893402",
+      "patientAdresse": "Joal",
+      "medicaments": [
+        {
+          "nom": "Vitamine c",
+          "quantite": 2,
+          "prix": 1500
+        }
+      ],
+      "total": 3000,
+      "date": "2025-11-08T03:33:46.695Z"
+    },
+    {
+      "id": "1762573018595",
+      "pharmacyId": "1",
+      "patientNom": "Ndiaye",
+      "patientPrenom": "Mor",
+      "patientTelephone": "771234567",
+      "patientAdresse": "Yoff",
+      "medicaments": [
+        {
+          "id": "1",
+          "nom": "Paracétamol",
+          "prix": 500
+        },
+        {
+          "id": "ddbe",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "total": 2000,
+      "date": "2025-11-08T03:36:58.595Z",
+      "commandeId": "1762551166542"
+    },
+    {
+      "id": "1762573380499",
+      "pharmacyId": "1",
+      "patientNom": "Mbaye",
+      "patientPrenom": "Sidy",
+      "patientTelephone": "771238759",
+      "patientAdresse": "Rufisque",
+      "medicaments": [
+        {
+          "id": "1",
+          "nom": "Paracétamol",
+          "prix": 500
+        },
+        {
+          "id": "ddbe",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "total": 2000,
+      "date": "2025-11-08T03:43:00.499Z"
+    },
+    {
+      "id": "1762573388788",
+      "pharmacyId": "1",
+      "patientNom": "Samb",
+      "patientPrenom": "Moustapha",
+      "patientTelephone": "778690436",
+      "patientAdresse": "Bargny",
+      "medicaments": [
+        {
+          "id": "1",
+          "nom": "Paracétamol",
+          "prix": 500
+        },
+        {
+          "id": "ddbe",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "total": 2000,
+      "date": "2025-11-08T03:43:08.788Z"
+    },
+    {
+      "id": "1762573404185",
+      "pharmacyId": "1",
+      "patientNom": "Diallo",
+      "patientPrenom": "Abdou",
+      "patientTelephone": "704567890",
+      "patientAdresse": "Fann",
+      "medicaments": [
+        {
+          "id": "1",
+          "nom": "Paracétamol",
+          "prix": 500
+        },
+        {
+          "id": "ddbe",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "total": 2000,
+      "date": "2025-11-08T03:43:24.185Z"
+    },
+    {
+      "id": "1762573590198",
+      "pharmacyId": "1",
+      "patientNom": "Diene",
+      "patientPrenom": "Fatou",
+      "patientAdresse": "HLM",
+      "patientTelephone": "773456789",
+      "medicaments": [
+        {
+          "nom": "Ibuprofène",
+          "quantite": 3,
+          "prix": 700
+        }
+      ],
+      "total": 2100,
+      "date": "2025-11-08T03:46:30.198Z"
+    },
+    {
+      "id": "1762573674205",
+      "commandeId": "1762571649583",
+      "pharmacyId": "1",
+      "patientNom": "Ndao",
+      "patientPrenom": "Modou",
+      "patientAdresse": "Hann Bel Air",
+      "patientTelephone": "774567806",
+      "medicaments": [
+        {
+          "id": "1",
+          "nom": "Paracétamol",
+          "prix": 500
+        },
+        {
+          "id": "ddbe",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "total": 2000,
+      "date": "2025-11-08T03:47:54.205Z"
+    },
+    {
+      "id": "1762574236466",
+      "pharmacyId": "1",
+      "patientNom": "Faye",
+      "patientPrenom": "Gnilane",
+      "patientAdresse": "Yembeul",
+      "patientTelephone": "782456098",
+      "medicaments": [
+        {
+          "nom": "Paracetamol",
+          "quantite": 3,
+          "prix": 500
+        }
+      ],
+      "total": 1500,
+      "date": "2025-11-08T03:57:16.466Z"
+    },
+    {
+      "id": 1762574806995,
+      "commandeId": "1762574739853",
+      "pharmacyId": "2",
+      "patientNom": "Patient 1",
+      "patientPrenom": "Mor",
+      "patientAdresse": "Yoff",
+      "patientTelephone": "771234567",
+      "medicaments": [
+        {
+          "id": "2c60",
+          "nom": "Paracetamol",
+          "prix": 500
+        },
+        {
+          "id": "75f4",
+          "nom": "Vitamine c",
+          "prix": 1500
+        }
+      ],
+      "total": 2000,
+      "date": "2025-11-08T04:06:46.995Z"
+    },
+    {
+      "id": 1762574892925,
+      "pharmacyId": "2",
+      "patientNom": "Diene",
+      "patientPrenom": "Saly",
+      "patientAdresse": "Mbour",
+      "patientTelephone": "782349087",
+      "medicaments": [
+        {
+          "nom": "Betadine",
+          "quantite": 2,
+          "prix": 1000
+        }
+      ],
+      "total": 2000,
+      "date": "2025-11-08T04:08:12.925Z"
+    },
+    {
+      "id": 1762575085212,
+      "pharmacyId": "2",
+      "patientNom": "Sylla",
+      "patientPrenom": "Badou",
+      "patientAdresse": "Medina",
+      "patientTelephone": "774568793",
+      "medicaments": [
+        {
+          "nom": "Amoxicilline",
+          "quantite": 4,
+          "prix": 1200
+        }
+      ],
+      "total": 4800,
+      "date": "2025-11-08T04:11:25.212Z"
     }
   ]
 }

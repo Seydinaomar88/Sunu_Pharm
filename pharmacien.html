@@ -61,14 +61,83 @@
     </div>
   </div>
 
+  <div class="container mt-4">
+  <!-- <h3>💊 Gestion des ventes - Pharmacie</h3> -->
+
+  <!-- ===================== GESTION DES VENTES ===================== -->
+<section class="mt-5">
+  <h4>💰 Gestion des ventes</h4>
+  <div id="ventesList" class="mt-3"></div>
+</section>
+
+
+  <!-- Section : Infos patient pour la vente -->
+<div class="card p-3 mb-3 shadow-sm">
+  <h5>Infos Patient</h5>
+  <div class="row g-2">
+    <div class="col-md-3">
+      <input type="text" id="patientNom" class="form-control" placeholder="Nom">
+    </div>
+    <div class="col-md-3">
+      <input type="text" id="patientPrenom" class="form-control" placeholder="Prénom">
+    </div>
+    <div class="col-md-3">
+      <input type="text" id="patientTelephone" class="form-control" placeholder="Téléphone">
+    </div>
+    <div class="col-md-3">
+      <input type="text" id="patientAdresse" class="form-control" placeholder="Adresse">
+    </div>
+  </div>
+</div>
+
+
+  <!-- Section : Ajouter médicament à la vente -->
+  <div class="card p-3 mb-3 shadow-sm">
+    <h5>Ajouter un médicament à la vente</h5>
+    <div class="row g-2">
+      <div class="col-md-4">
+        <input type="text" id="venteMedNom" class="form-control" placeholder="Nom médicament">
+      </div>
+      <div class="col-md-3">
+        <input type="number" id="venteMedQuantite" class="form-control" placeholder="Quantité">
+      </div>
+      <div class="col-md-3">
+        <input type="number" id="venteMedPrix" class="form-control" placeholder="Prix unitaire">
+      </div>
+      <div class="col-md-2">
+        <button class="btn btn-primary w-100" id="btnAjouterVenteMed">Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section : Médicaments sélectionnés pour la vente -->
+  <div class="card p-3 mb-3 shadow-sm">
+    <h5>Médicaments dans la vente</h5>
+    <div id="medsVente" class="mb-2"></div>
+    <p><strong>Total :</strong> <span id="totalVente">0 FCFA</span></p>
+    <button class="btn btn-success" id="btnValiderVente">Valider la vente</button>
+  </div>
+
+  <!-- Section : Ventes enregistrées -->
+  <div class="card p-3 mb-3 shadow-sm">
+    <h5>Ventes enregistrées</h5>
+    <div id="listeVentes"></div>
+  </div>
+</div>
+
+
   <!-- Commandes des patients -->
-  <div class="card shadow-sm">
+  <div class="card shadow-sm mb-4">
     <div class="card-header"><h5>Commandes Patients</h5></div>
     <div class="card-body" id="listeCommandes">
       <!-- Les commandes seront affichées ici -->
     </div>
   </div>
 
+  <!-- Notifications -->
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="pharmacien.js" defer></script>
 </body>
 </html>
